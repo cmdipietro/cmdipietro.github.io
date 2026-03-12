@@ -150,7 +150,7 @@
      .hero-left {
       padding: 160px 48px 80px;
       display: grid;
-      grid-template-columns: minmax(auto, 500px) 320px;
+      grid-template-columns: 320px minmax(auto, 500px);
       gap: 8px;
       justify-content: center;
       align-items: center;
@@ -638,8 +638,17 @@
   <!-- Hero -->
   <section class="hero" id="about">
     <div class="hero-left">
-      <!-- Text column -->
-      <div class="hero-text-col">
+       <!-- Photo column -->
+      <div class="hero-photo-col">
+        <div class="hero-photo-wrap" style="opacity:0;animation:fadeUp 0.8s ease 0.1s forwards">
+          <!-- Replace the placeholder below with: <img src="your-photo.jpg" alt="Christina Maria" class="hero-photo"> -->
+         <img src="images/mainphoto.jpg" alt="Christina Maria" class="hero-photo">
+            <span>◉</span>
+            <span>Your Photo</span>
+          </div>
+          <div class="hero-photo-ring"></div>
+        </div>
+      </div>
         <p class="hero-tag">Experienced Growth Marketing Strategist</p>
         <h1 class="hero-name">Christina<br/><em>Maria</em></h1>
         <p class="hero-title">Data-informed. Solutions Oriented. Results-focused.</p>
@@ -652,11 +661,7 @@
         </div>
       </div>
       <!-- Photo column -->
-      <div class="hero-photo-col">
-        <div class="hero-photo-wrap" style="opacity:0;animation:fadeUp 0.8s ease 0.1s forwards">
-          <!-- Replace the placeholder below with: <img src="your-photo.jpg" alt="Christina Maria" class="hero-photo"> -->
-          <img src="images/mainphoto.jpg" alt="Christina Maria" class="hero-photo">
-          </div>
+     
           <div class="hero-photo-ring"></div>
         </div>
       </div>
