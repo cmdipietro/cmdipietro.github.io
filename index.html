@@ -624,7 +624,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           Christina is a growth marketing strategist known for making data work harder. With a decade of experience bridging marketing, data, and engineering teams, she brings rigor and clarity to measurement, attribution, and performance strategy — helping brands make confident, informed decisions. A background in anthropology keeps her endlessly curious about human behavior, which turns out to be pretty useful in marketing. Outside of work, Christina is passionate about health and wellness. You can find her in the local gym training martial arts and finding new ways to challenge herself.
         </p>
         <div class="hero-cta">
-          <a href="#connect" class="btn-primary" onclick="gtag('event', 'click', { 'event_category': 'CTA', 'event_label': 'lets_connect_hero', 'value': 1 })">Let's Connect</a>
+          <a href="#connect" class="btn-primary">Let's Connect</a>
         </div>
       </div>
 
@@ -708,30 +708,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 
   <script>
-    // Calendly event tracking
-    window.addEventListener('message', function(e) {
-      if (e.origin !== 'https://calendly.com') return;
-      if (e.data.event === 'calendly.event_type_viewed') {
-        gtag('event', 'calendly_viewed', {
-          'event_category': 'Calendly',
-          'event_label': 'event_type_viewed'
-        });
-      }
-      if (e.data.event === 'calendly.date_and_time_selected') {
-        gtag('event', 'calendly_time_selected', {
-          'event_category': 'Calendly',
-          'event_label': 'date_and_time_selected'
-        });
-      }
-      if (e.data.event === 'calendly.event_scheduled') {
-        gtag('event', 'calendly_booked', {
-          'event_category': 'Calendly',
-          'event_label': 'meeting_booked',
-          'value': 1
-        });
-      }
-    });
-
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
