@@ -12,7 +12,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
- <title>Christina DiPietro</title>
+ <script>
+    if (window.location.hostname === 'christinadipietro.com') {
+      window.location.replace('https://www.christinadipietro.com' + window.location.pathname);
+    }
+  </script>
+  <title>Christina DiPietro</title>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
