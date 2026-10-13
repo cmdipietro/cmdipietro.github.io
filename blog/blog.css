@@ -243,7 +243,7 @@ footer {
 footer p { font-size: 11px; color: var(--muted); letter-spacing: 0.1em; }
 
 @media (max-width: 760px) {
-  nav { padding: 16px 20px; }
+  nav { position: static; padding: 16px 20px; }
   .nav-links { gap: 18px; }
   .nav-links a { font-size: 10px; letter-spacing: 0.15em; }
   .wrap-wide { padding: 0 24px; }
