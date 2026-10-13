@@ -409,6 +409,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       line-height: 1.7;
     }
 
+    /* BLOG SWITCH: hides the nav link, hero button and Writing section.
+       Delete this one line when your first post is live. */
+    .blog-link { display: none !important; }
+
     /* Writing */
     #writing {
       background: var(--bg);
@@ -669,7 +673,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="/blog/">Blog</a></li>
+      <li class="blog-link"><a href="/blog/">Blog</a></li>
       <li><a href="#connect">Connect</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -697,7 +701,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </p>
         <div class="hero-cta">
           <a href="#connect" class="btn-primary">Let's Connect</a>
-          <a href="/blog/" class="btn-secondary">Read the Blog</a>
+          <a href="/blog/" class="btn-secondary blog-link">Read the Blog</a>
         </div>
       </div>
 
@@ -735,7 +739,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- Writing / Blog -->
-  <section id="writing">
+  <section id="writing" class="blog-link">
     <div class="section-inner">
       <div class="writing-head">
         <div>
